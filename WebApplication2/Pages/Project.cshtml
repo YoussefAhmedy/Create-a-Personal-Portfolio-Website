@@ -1,0 +1,17 @@
+﻿@page
+@model WebApplication2.Pages.ProjectModel
+@{
+}
+
+<h1>Projects</h1>
+
+<ul>
+    @foreach (var project in Model)
+    {
+        <li>
+            <h2>@project.Title</h2>
+            <p>@project.Description</p>
+            <a href="@project.Link" class="btn btn-primary">View Project</a>
+        </li>
+    }
+</ul>
